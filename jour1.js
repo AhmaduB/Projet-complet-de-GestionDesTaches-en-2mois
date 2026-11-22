@@ -46,7 +46,7 @@ function resume(taches) {
        console.log(descriptionTache(tache))   
     }
 }
-    // la fonction flechee
+    // Voici la fonction flechee
   // const resume = (taches) => {
     //  taches.forEach((tache) => console.log(descriptionTache(tache)));
     // };
