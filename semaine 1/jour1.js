@@ -1,13 +1,3 @@
-const prenom = "Amadou"
-console.log(`Bonjour ${prenom}`);
-
-const carre = (n) => n*n;
-console.log(carre(6))
-
-const estPair = (n) => n % 2 === 0;
-
-console.log(estPair(83))
-
 const taches = [
   { id: 1, titre: "Installer Node", statut: "termine" },
   { id: 2, titre: "Réviser JS", statut: "encours" },
@@ -15,10 +5,18 @@ const taches = [
   { id: 4, titre: "Lire la doc React", statut: "afaire" },
 ];
 
+const prenom = "Amadou"
+console.log(`Bonjour ${prenom}`);
+
+const carre = (n) => n*n;
+console.log(carre(6))
+
+const estPair = (n) => n % 2 === 0;
+console.log(estPair(83))
+
 function descriptionTache(tache) {
     return ` ${tache.id} - ${tache.titre} (${tache.statut})`
 }
-
 console.log(descriptionTache(taches[1]));
 
 
@@ -29,7 +27,6 @@ console.log(salut())
 console.log(salut("Demba"))
 
 const maximum = (a,b) => (a < b ? b : a)
-
 console.log(maximum(12, 17))
 
 const chiffre = [12, 22, 14, 8 ,45]
