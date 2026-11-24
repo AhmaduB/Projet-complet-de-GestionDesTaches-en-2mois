@@ -19,7 +19,6 @@ function descriptionTache(tache) {
 }
 console.log(descriptionTache(taches[1]));
 
-
 function salut(nom = "inconnu") {
     return `Bonjour ${nom}`
 }
@@ -47,5 +46,4 @@ function resume(taches) {
   // const resume = (taches) => {
     //  taches.forEach((tache) => console.log(descriptionTache(tache)));
     // };
-
 resume(taches)

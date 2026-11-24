@@ -15,7 +15,6 @@ function afficher({id,titre}) {
 };
 afficher(taches[2]);
 
-
 const newTaches = [...taches, {id:5, titre:"Se reposer", statut: "encours"}]
 console.log(newTaches);
 console.log(taches);

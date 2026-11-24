@@ -33,7 +33,6 @@ console.log(titreJs())
 const tabAfaire = () => taches.map((t) => {
   return {...t, statut: "afaire"}
 })
-
 console.log(tabAfaire())
 
 // Avec map et une condition, retourne un tableau où seule la tâche d'id 3 passe à "encours".
