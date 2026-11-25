@@ -5,6 +5,7 @@ const taches = [
   { id: 4, titre: "Lire la doc React", statut: "afaire" },
 ];
 
+// Creer un tableau contenant les titres
 const tabTitres = () => taches.map((tache) => tache.titre);
 console.log(tabTitres());
 
@@ -40,7 +41,6 @@ const tab = () => taches.map((t) =>  t.id === 3 ? {...t, statut: "encours"} : {.
 console.log(tab())
 
 // Retourne les titres des tâches non terminées en enchaînant filter puis map.
-
 const tab7 = () => taches
   .filter((t) => t.statut !== "termine")
   .map((t)=> t.titre)
