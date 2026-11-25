@@ -5,20 +5,25 @@ const taches = [
   { id: 4, titre: "Lire la doc React", statut: "afaire" },
 ];
 
+// Afficher le prenom
 const prenom = "Amadou"
 console.log(`Bonjour ${prenom}`);
 
+// calculer le carre de n
 const carre = (n) => n*n;
 console.log(carre(6))
 
+// verifier si un nombre est pair
 const estPair = (n) => n % 2 === 0;
 console.log(estPair(83))
 
+// fonction qui return la description de la tache
 function descriptionTache(tache) {
     return ` ${tache.id} - ${tache.titre} (${tache.statut})`
 }
 console.log(descriptionTache(taches[1]));
 
+// fonction qui return Bonjour (nom)
 function salut(nom = "inconnu") {
     return `Bonjour ${nom}`
 }
@@ -43,7 +48,7 @@ function resume(taches) {
     }
 }
     // Voici la fonction flechee
-  // const resume = (taches) => {
+    // const resume = (taches) => {
     //  taches.forEach((tache) => console.log(descriptionTache(tache)));
     // };
 resume(taches)
