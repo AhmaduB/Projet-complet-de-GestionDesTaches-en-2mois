@@ -15,14 +15,14 @@ console.log("Exo 1 :", somme);
 const nombreTaches = taches.reduce((total) => total + 1, 0);
 console.log("Exo 2 :", nombreTaches, taches.length); 
 
-// Exercice 3 : compter les tâches par statut
+// Exercice 3: compter les tâches par statut
 const compterParStatut = taches.reduce((acc, t) => {
   return { ...acc, [t.statut]: (acc[t.statut] || 0) + 1 };  
   // ou bien faire:   if (acc[tache.statut]) { acc[tache.statut]++; } else { acc[tache.statut] = 1; }
 }, {});
 console.log("Exo 3 :", compterParStatut); // { termine: 1, encours: 1, afaire: 2 }
 
-// Exercice 4 : tri alphabétique par titre (sur une copie)
+// Exercice 4: tri alphabétique par titre (sur une copie)
 const triParTitre = [...taches].sort((a, b) => a.titre.localeCompare(b.titre));
 console.log("Exo 4 :", triParTitre);
 
