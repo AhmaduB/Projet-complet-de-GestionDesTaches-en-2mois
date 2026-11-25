@@ -15,11 +15,12 @@ function afficher({id,titre}) {
 };
 afficher(taches[2]);
 
+// Ajout d'une nouvelle tache
 const newTaches = [...taches, {id:5, titre:"Se reposer", statut: "encours"}]
 console.log(newTaches);
 console.log(taches);
 
-
+// copie d'une tache en changeant le statut
 const Tache3 = taches[2];
 const copieTache3 = { ...Tache3, statut:"encours"};
 console.log(Tache3);
